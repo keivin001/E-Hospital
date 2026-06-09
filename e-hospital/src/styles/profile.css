@@ -1,0 +1,40 @@
+/* src/styles/profile.css – avatar call effect and rounded styling */
+
+/* Ensure avatars are circular */
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-200);
+  color: var(--gray-800);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Call animation effect – subtle pulse */
+.call-effect {
+  position: relative;
+  animation: pulseRing 2s infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    transform: scale(1);
+  }
+}
+
+/* Optional hover scaling for better UX */
+.call-effect:hover {
+  animation-duration: 1.2s;
+}

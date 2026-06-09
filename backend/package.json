@@ -1,0 +1,28 @@
+{
+  "name": "e-hospital-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "migrate:patients": "node scripts/patient-migration.js",
+    "migrate:doctors": "node scripts/doctor-migration.js",
+    "migrate:admins": "node scripts/admin-migration.js",
+    "cleanup:patients": "node scripts/cleanup-patient-data.js",
+    "cleanup:samples": "node scripts/remove-sample-data.js",
+    "purge:all": "node scripts/purge-all-data.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
