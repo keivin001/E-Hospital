@@ -754,7 +754,7 @@ input, textarea, select { font-family: inherit; }
 .status-offline { background: var(--gray-400); }
 .status-busy { background: var(--danger); }
 
-<<<<<<< HEAD
+
 /* Chat page */
 .chat-shell {
   display: flex;
@@ -929,7 +929,8 @@ input, textarea, select { font-family: inherit; }
   top: 0;
   z-index: 20;
   padding: 14px 20px;
-  border-bottom: 1px solid  /* Scrolling image container */
+  border-bottom: 1px solid rgba(0,0,0,0.08); /* Scrolling image container */
+
   .login-image-scroller {
     overflow: hidden;
     width: 100%;
